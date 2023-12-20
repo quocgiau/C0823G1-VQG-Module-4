@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Tra cứu từ điển</h2>
-<form action="/convert">
+<form action="/convert" method="post">
   <h4>Nhập từ cần tra cứu</h4>
   <input type="text" name="vocabulary">
   <input type="submit" value="Tra cứu">

@@ -1,13 +1,10 @@
 package com.example.spring_mvc.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 @Controller
@@ -26,16 +23,10 @@ public class DictionaryController {
         return "/views";
     }
 
-    @GetMapping("/convert")
-    public String translate(@RequestParam String vocabulary, HttpServletRequest request) {
-        String result = null;
-        for (Map.Entry<String, String> mapSearch : stringMap.entrySet()) {
-            if (mapSearch.getKey().contains(vocabulary.toLowerCase(Locale.ROOT))) {
-                result = mapSearch.getValue();
-                break;
-            }
-        }
-        if (result == null) {
+    @PostMapping("/convert")
+    public String translate(@RequestParam String vocabulary, HttpServletRequest request)     {
+        String result = stringMap.get(vocabulary.toLowerCase());
+        if (!stringMap.containsKey(vocabulary.toLowerCase())){
             result = "Không có trong từ điển";
         }
         request.setAttribute("result", result);
