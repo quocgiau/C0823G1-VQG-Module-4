@@ -11,7 +11,7 @@ public class SpiceController {
         return "/views";
     }
     @PostMapping("condiments")
-    public String condiments(@RequestParam(value = "sort", defaultValue = "") String[] sort, Model model){
+    public String condiments(@RequestParam(value = "sort", defaultValue = "Empty list") String[] sort, Model model){
         model.addAttribute("sort", sort);
         return "/result";
     }
