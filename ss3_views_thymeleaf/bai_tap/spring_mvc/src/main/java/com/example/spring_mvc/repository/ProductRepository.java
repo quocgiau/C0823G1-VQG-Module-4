@@ -27,18 +27,18 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void add(Product customer) {
-
+    public void add(Product product) {
+        hashMap.put(product.getId(),product);
     }
 
     @Override
     public Product findById(int id) {
-        return null;
+        return hashMap.get(id);
     }
 
     @Override
-    public void update(int id, Product customer) {
-
+    public void update(int id, Product product) {
+        hashMap.put(id, product);
     }
 
     @Override
