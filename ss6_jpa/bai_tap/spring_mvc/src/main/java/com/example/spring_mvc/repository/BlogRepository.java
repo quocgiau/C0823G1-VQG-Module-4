@@ -4,7 +4,6 @@ import com.example.spring_mvc.model.Blog;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
@@ -18,8 +17,8 @@ public class BlogRepository implements IBlogRepository {
 
     @Override
     public List<Blog> findAll() {
-        TypedQuery<Blog> query = entityManager.createQuery("select b from Blog b", Blog.class);
-        return query.getResultList();
+        TypedQuery<Blog> typedQuery = entityManager.createQuery("from Blog", Blog.class);
+        return typedQuery.getResultList();
     }
 
     @Override
@@ -29,13 +28,14 @@ public class BlogRepository implements IBlogRepository {
 
     @Override
     public Blog findById(int id) {
-        TypedQuery<Blog> query = entityManager.createQuery("select b from Blog b where b.id=:id", Blog.class);
-        query.setParameter("id", id);
-        try {
-            return query.getSingleResult();
-        } catch (NoResultException e) {
-            throw new RuntimeException(e);
-        }
+//        TypedQuery<Blog> query = entityManager.createQuery("select b from Blog b where b.id=:id", Blog.class);
+//        query.setParameter("id", id);
+//        try {
+//            return query.getSingleResult();
+//        } catch (NoResultException e) {
+//            throw new RuntimeException(e);
+//        }
+        return null;
     }
 
     @Override

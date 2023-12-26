@@ -13,10 +13,10 @@ import java.util.List;
 @Controller
 public class BlogController {
     @Autowired
-    private IBlogService service;
+    private IBlogService blogService;
     @GetMapping("")
     public String display(Model model) {
-        List<Blog> blogs = service.findAll();
+        List<Blog> blogs = blogService.findAll();
         model.addAttribute("blogs", blogs);
         return "/views";
     }

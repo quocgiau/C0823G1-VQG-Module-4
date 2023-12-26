@@ -1,6 +1,7 @@
 package com.example.spring_mvc.repository;
 
 import com.example.spring_mvc.model.Blog;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
