@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e41d2462-73c7-4a36-9974-b0e9e75ed04b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss10_session_cookie_spring/shopping-cart/src/main/java/com/example/shoppingcart/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss10_session_cookie_spring/shopping-cart/src/main/java/com/example/shoppingcart/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai1/spring_mvc/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai1/spring_mvc/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_views_thymeleaf/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/views.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_views_thymeleaf/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/views.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_data_binding_form/bai_tap/spring_mvc/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_data_binding_form/bai_tap/spring_mvc/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_data_binding_form/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_data_binding_form/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss5_csdl_va_orm/ss5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss5_csdl_va_orm/ss5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/java/com/example/spring_mvc/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/views.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss6_jpa/bai_tap/spring_mvc/src/main/webapp/WEB-INF/views/views.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8_validation/validation/src/main/java/com/example/validation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8_validation/validation/src/main/java/com/example/validation/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8_validation/validation/src/main/java/com/example/validation/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8_validation/validation/src/main/java/com/example/validation/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo1/src/main/java/com/example/demo/model/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../text/demo1/src/main/java/com/example/demo/model/Category.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2aNdjKH4y9I4ZqNodTW3btpNQbp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CODEGYM/Module_4/demo/ProductDTO",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e41d2462-73c7-4a36-9974-b0e9e75ed04b" name="Changes" comment="" />
+      <created>1704163104684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704163104684</updated>
+      <workItem from="1704163106036" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
