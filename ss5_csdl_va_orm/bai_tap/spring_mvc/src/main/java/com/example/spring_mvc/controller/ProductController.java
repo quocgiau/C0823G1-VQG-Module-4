@@ -28,11 +28,11 @@ public class ProductController {
 //        return "redirect:/";
 //    }
 //
-//    @GetMapping("/create")
-//    public String createForm(Model model) {
-//        model.addAttribute("product", new Product());
-//        return "/create";
-//    }
+    @GetMapping("/create")
+    public String createForm(Model model) {
+        model.addAttribute("product", new Product());
+        return "/create";
+    }
 //
 //    @PostMapping("/create")
 //    public String create(Product product, Model model) {

@@ -1,6 +1,7 @@
 package com.example.spring_mvc.model;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "blog")
@@ -11,15 +12,20 @@ public class Blog {
     private String name;
     private String image;
     private String content;
+    private LocalDateTime timeCreateBlog;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
     public Blog() {
     }
 
-    public Blog(int id, String name, String image, String content) {
+    public Blog(int id, String name, String image, String content, LocalDateTime timeCreateBlog) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.content = content;
+        this.timeCreateBlog = timeCreateBlog;
     }
 
     public int getId() {
@@ -52,5 +58,13 @@ public class Blog {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public LocalDateTime getTimeCreateBlog() {
+        return timeCreateBlog;
+    }
+
+    public void setTimeCreateBlog(LocalDateTime timeCreateBlog) {
+        this.timeCreateBlog = timeCreateBlog;
     }
 }

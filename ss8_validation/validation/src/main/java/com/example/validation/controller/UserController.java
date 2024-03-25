@@ -26,18 +26,6 @@ public class UserController {
         return "/views";
     }
 
-    //    @PostMapping("")
-//    public String save(@Valid @ModelAttribute("user") UserDTO userDTO, BindingResult bindingResult, RedirectAttributes attributes ) {
-//        User user1 = new User();
-//        new UserDTO().validate(userDTO, bindingResult);
-//        if (bindingResult.hasFieldErrors()) {
-//            return "views";
-//        }
-//        BeanUtils.copyProperties(userDTO, user1);
-//        userService.add(user1);
-//        attributes.addFlashAttribute("mess", "add new Success");
-//        return "/result";
-//    }
     @PostMapping("")
     public String save(@Valid @ModelAttribute("user") UserDTO userDTO, BindingResult bindingResult, Model model) {
         User user1 = new User();

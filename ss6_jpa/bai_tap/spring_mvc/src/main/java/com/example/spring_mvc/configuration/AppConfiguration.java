@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.*;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -107,7 +108,10 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         transactionManager.setEntityManagerFactory(emf);
         return transactionManager;
     }
-
+//    @Override
+//    public void addFormatters(FormatterRegistry registry) {
+//        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceService.class)));
+//    }
 
 //    /*cấu hình tài nguyên bên ngoài: css, js, img*/
 //    public void addResourceHandlers(final ResourceHandlerRegistry registry) {

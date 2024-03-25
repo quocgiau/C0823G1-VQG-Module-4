@@ -1,0 +1,7 @@
+
+git add .
+git commit -m "first commit"
+git push -u origin main
+git commit -m "giau up"
+git add 
+git push origin quocgiau

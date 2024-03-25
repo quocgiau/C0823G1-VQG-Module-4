@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Lợn</title>
@@ -68,18 +68,18 @@
         <th>Sửa</th>
         <th>Xoá</th>
     </tr>
-    <tr class="align-middle" th:each="pig, loop:${pig}">
+    <tr class="align-middle" th:each="pigPrivate, loop:${pigPrivate}">
         <td th:text="${loop.count}"></td>
-        <td th:text="${pig.name}"></td>
-        <td th:text="${pig.weight + ' kg'}"></td>
-        <td th:text="${pig.age}"></td>
-        <td th:text="${pig.gender ? 'Con cái' : 'Con đực'}"></td>
+        <td th:text="${pigPrivate.name}"></td>
+        <td th:text="${pigPrivate.weight + ' kg'}"></td>
+        <td th:text="${pigPrivate.age}"></td>
+        <td th:text="${pigPrivate.gender ? 'Con cái' : 'Con đực'}"></td>
         <td>
-            <a th:href="@{/edit/{id}(id=${pig.id})}" class="btn btn-outline-secondary" style="text-decoration: none">Sửa</a>
+            <a th:href="@{/edit/{id}(id=${pigPrivate.id})}" class="btn btn-outline-secondary" style="text-decoration: none">Sửa</a>
         </td>
         <td>
             <button type="button" class="btn btn-outline-danger"
-                    th:attr="data-id=${pig.id} , data-name=${pig.name} "
+                    th:attr="data-id=${pigPrivate.id} , data-name=${pigPrivate.name} "
                     onclick="infoDelete(this.getAttribute('data-id'), this.getAttribute('data-name'))"
                     data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Xoá
@@ -88,26 +88,26 @@
     </tr>
 </table>
 <div class="pagination-wrapper">
-    <nav aria-label="..." th:if="${pig.getTotalPages() > 1}">
+    <nav aria-label="..." th:if="${pigPrivate.getTotalPages() > 1}">
         <ul class="pagination pagination-circle pagination-centered">
-            <li class="page-item" th:if="${cage.hasPrevious()}">
-                <a class="page-link" th:href="@{/(page = ${cage.number - 1})}">Quay lại</a>
+            <li class="page-item" th:if="${pigPrivate.hasPrevious()}">
+                <a class="page-link" th:href="@{/(page = ${pigPrivate.number - 1})}">Quay lại</a>
             </li>
-            <div th:each="item, loop : ${#numbers.sequence(1, cage.totalPages )}">
-                <div th:if="${cage.number + 1 == item}">
+            <div th:each="item, loop : ${#numbers.sequence(1, pigPrivate.totalPages )}">
+                <div th:if="${pigPrivate.number + 1 == item}">
                     <li class="page-item active" aria-current="page">
                         <a class="page-link" th:href="@{/(page=${item - 1})}" th:text="${item}"><span
                                 class="visually-hidden">(current)</span></a>
                     </li>
                 </div>
-                <div th:unless="${cage.number + 1 == item}">
+                <div th:unless="${pigPrivate.number + 1 == item}">
                     <li class="page-item"><a class="page-link" th:href="@{/(page=${item - 1})}"
                                              th:text="${item}"></a></li>
                 </div>
 
             </div>
-            <li class="page-item" th:if="${cage.hasNext()}">
-                <a class="page-link" th:href="@{/(page = ${cage.number + 1})}">Tiếp</a>
+            <li class="page-item" th:if="${pigPrivate.hasNext()}">
+                <a class="page-link" th:href="@{/(page = ${pigPrivate.number + 1})}">Tiếp</a>
             </li>
         </ul>
     </nav>

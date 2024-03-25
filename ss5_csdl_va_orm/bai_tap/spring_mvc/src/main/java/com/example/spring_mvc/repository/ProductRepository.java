@@ -9,15 +9,13 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import java.util.List;
-
 @Repository
 public class ProductRepository implements IProductRepository {
     private static EntityManager entityManager;
     private static SessionFactory sessionFactory;
-
     static {
         try {
-            sessionFactory = new Configuration()
+            sessionFactory =  new Configuration()
                     .configure("hibernate.conf.xml")
                     .buildSessionFactory();
             entityManager = sessionFactory.createEntityManager();
@@ -25,7 +23,6 @@ public class ProductRepository implements IProductRepository {
             System.out.println(e.getMessage());
         }
     }
-
     @Override
     public List<Product> findAll() {
         String query = "select p from Product p";
